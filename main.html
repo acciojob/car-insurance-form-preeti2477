@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Job Application Form</title>
+<title>Car Insurance Registration Form</title>
 </head>
 <body>
 
-<form>
+<form method="post">
     <!-- Name -->
     <label for="name">Name</label>
     <input type="text" id="name" required>
@@ -20,31 +20,31 @@
 
     <!-- Gender -->
     <label>Gender</label>
-    <input type="radio" id="male" name="gender" value="male" required>
+    <input type="radio" name="gender" id="male" value="male" required>
     <label for="male">Male</label>
-    <input type="radio" id="female" name="gender" value="female" required>
+    <input type="radio" name="gender" id="female" value="female" required>
     <label for="female">Female</label>
-    <input type="radio" id="other" name="gender" value="other" required>
+    <input type="radio" name="gender" id="other" value="other" required>
     <label for="other">Other</label>
     <br><br>
 
-    <!-- Laptop Brands -->
-    <label for="laptop">Laptop Brands</label>
-    <select id="laptop">
-        <option value="Apple">Apple</option>
-        <option value="Asus">Asus</option>
-        <option value="HP">HP</option>
+    <!-- Car Brands - CORRECTED ID -->
+    <label for="cars">Car Brands</label>
+    <select id="cars">
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedez">Mercedez</option>
     </select>
     <br><br>
 
-    <!-- Age -->
-    <label for="age">Age</label>
-    <input type="number" id="age" required>
+    <!-- Car Age - CORRECTED ID -->
+    <label for="carage">Car Age</label>
+    <input type="number" id="carage" required>
     <br><br>
 
-    <!-- Date of Birth -->
-    <label for="dob">Date of Birth</label>
-    <input type="date" id="dob" required>
+    <!-- Date of Purchase - CORRECTED ID -->
+    <label for="dop">Date of Purchase</label>
+    <input type="date" id="dop" required>
     <br><br>
 
     <!-- Password -->
@@ -52,14 +52,8 @@
     <input type="password" id="password" required>
     <br><br>
 
-    <!-- Portfolio URL -->
-    <label for="portfolio">Portfolio URL</label>
-    <input type="url" id="portfolio">
-    <br><br>
-
     <!-- Submit Button -->
     <button type="submit">Submit</button>
-
 </form>
 
 </body>
